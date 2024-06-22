@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14D4F2752C11890C00B51CE8 /* TreatmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D4F2742C11890C00B51CE8 /* TreatmentView.swift */; };
+		14D4F2772C118A7100B51CE8 /* DoctorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D4F2762C118A7100B51CE8 /* DoctorView.swift */; };
+		14D4F2792C118AE200B51CE8 /* MyPatientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D4F2782C118AE200B51CE8 /* MyPatientView.swift */; };
+		14D4F27B2C118B0800B51CE8 /* PatientProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D4F27A2C118B0800B51CE8 /* PatientProfileView.swift */; };
+		14D4F27D2C118C1300B51CE8 /* BedAvailabilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D4F27C2C118C1300B51CE8 /* BedAvailabilityView.swift */; };
+		14D4F27F2C118C3600B51CE8 /* AddDoctorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D4F27E2C118C3600B51CE8 /* AddDoctorView.swift */; };
+		14D5658D2C101C440042F58F /* HospConnectPatientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5658C2C101C440042F58F /* HospConnectPatientApp.swift */; };
+		14D5658F2C101C440042F58F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5658E2C101C440042F58F /* ContentView.swift */; };
+		14D565912C101C460042F58F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14D565902C101C460042F58F /* Assets.xcassets */; };
+		14D565942C101C460042F58F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14D565932C101C460042F58F /* Preview Assets.xcassets */; };
+		850F4B0C2C101E92009B7E12 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850F4B0B2C101E92009B7E12 /* AuthViewModel.swift */; };
+		850F4B0E2C101F0C009B7E12 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850F4B0D2C101F0C009B7E12 /* LoginView.swift */; };
+		850F4B142C102090009B7E12 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850F4B132C102090009B7E12 /* MainTabView.swift */; };
+		850F4B162C1020D8009B7E12 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850F4B152C1020D8009B7E12 /* HomeView.swift */; };
+		850F4B1B2C1024C6009B7E12 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850F4B1A2C1024C6009B7E12 /* InputView.swift */; };
+		850F4B1D2C10272F009B7E12 /* AuthModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850F4B1C2C10272F009B7E12 /* AuthModels.swift */; };
+		85225ACE2C1961FB0054DEED /* AddBedsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85225ACD2C1961FB0054DEED /* AddBedsModel.swift */; };
+		85225AD02C1965FD0054DEED /* BedsAvailibilityViewComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85225ACF2C1965FD0054DEED /* BedsAvailibilityViewComponents.swift */; };
+		85225AD22C1966B00054DEED /* SpecializationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85225AD12C1966B00054DEED /* SpecializationModel.swift */; };
+		85225AD42C19670D0054DEED /* SpecializationDataFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85225AD32C19670D0054DEED /* SpecializationDataFetching.swift */; };
+		857EDBD12C1B09450065EDBA /* StreamVideo in Frameworks */ = {isa = PBXBuildFile; productRef = 857EDBD02C1B09450065EDBA /* StreamVideo */; };
+		857EDBD32C1B09450065EDBA /* StreamVideoSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 857EDBD22C1B09450065EDBA /* StreamVideoSwiftUI */; };
+		857EDBD52C1B09450065EDBA /* StreamVideoUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 857EDBD42C1B09450065EDBA /* StreamVideoUIKit */; };
+		85D5961B2C187ACD007D9747 /* BedAvailibilityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D5961A2C187ACD007D9747 /* BedAvailibilityModel.swift */; };
+		85E3386C2C180BB500939B02 /* PatientDataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E3386B2C180BB500939B02 /* PatientDataFetch.swift */; };
+		85E3386E2C180D7500939B02 /* PatientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E3386D2C180D7500939B02 /* PatientModel.swift */; };
+		85E338702C1844E900939B02 /* AppointmentsPatientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E3386F2C1844E900939B02 /* AppointmentsPatientModel.swift */; };
+		85E338722C18453900939B02 /* FetchPatientappointments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E338712C18453900939B02 /* FetchPatientappointments.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		14D4F2742C11890C00B51CE8 /* TreatmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentView.swift; sourceTree = "<group>"; };
+		14D4F2762C118A7100B51CE8 /* DoctorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorView.swift; sourceTree = "<group>"; };
+		14D4F2782C118AE200B51CE8 /* MyPatientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPatientView.swift; sourceTree = "<group>"; };
+		14D4F27A2C118B0800B51CE8 /* PatientProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientProfileView.swift; sourceTree = "<group>"; };
+		14D4F27C2C118C1300B51CE8 /* BedAvailabilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedAvailabilityView.swift; sourceTree = "<group>"; };
+		14D4F27E2C118C3600B51CE8 /* AddDoctorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDoctorView.swift; sourceTree = "<group>"; };
+		14D565892C101C440042F58F /* HospConnectPatient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HospConnectPatient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14D5658C2C101C440042F58F /* HospConnectPatientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospConnectPatientApp.swift; sourceTree = "<group>"; };
+		14D5658E2C101C440042F58F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		14D565902C101C460042F58F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14D565932C101C460042F58F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		850F4B0B2C101E92009B7E12 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		850F4B0D2C101F0C009B7E12 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		850F4B132C102090009B7E12 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		850F4B152C1020D8009B7E12 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		850F4B1A2C1024C6009B7E12 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		850F4B1C2C10272F009B7E12 /* AuthModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModels.swift; sourceTree = "<group>"; };
+		85225ACD2C1961FB0054DEED /* AddBedsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBedsModel.swift; sourceTree = "<group>"; };
+		85225ACF2C1965FD0054DEED /* BedsAvailibilityViewComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedsAvailibilityViewComponents.swift; sourceTree = "<group>"; };
+		85225AD12C1966B00054DEED /* SpecializationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecializationModel.swift; sourceTree = "<group>"; };
+		85225AD32C19670D0054DEED /* SpecializationDataFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecializationDataFetching.swift; sourceTree = "<group>"; };
+		85D5961A2C187ACD007D9747 /* BedAvailibilityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedAvailibilityModel.swift; sourceTree = "<group>"; };
+		85E3386B2C180BB500939B02 /* PatientDataFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientDataFetch.swift; sourceTree = "<group>"; };
+		85E3386D2C180D7500939B02 /* PatientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientModel.swift; sourceTree = "<group>"; };
+		85E3386F2C1844E900939B02 /* AppointmentsPatientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsPatientModel.swift; sourceTree = "<group>"; };
+		85E338712C18453900939B02 /* FetchPatientappointments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPatientappointments.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14D565862C101C440042F58F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				857EDBD32C1B09450065EDBA /* StreamVideoSwiftUI in Frameworks */,
+				857EDBD52C1B09450065EDBA /* StreamVideoUIKit in Frameworks */,
+				857EDBD12C1B09450065EDBA /* StreamVideo in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14D565802C101C440042F58F = {
+			isa = PBXGroup;
+			children = (
+				14D5658B2C101C440042F58F /* HospConnectPatient */,
+				14D5658A2C101C440042F58F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14D5658A2C101C440042F58F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14D565892C101C440042F58F /* HospConnectPatient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14D5658B2C101C440042F58F /* HospConnectPatient */ = {
+			isa = PBXGroup;
+			children = (
+				850F4B172C102427009B7E12 /* Components */,
+				850F4B0A2C101E77009B7E12 /* Https */,
+				850F4B092C101E62009B7E12 /* Authentication */,
+				850F4B082C101E60009B7E12 /* Views */,
+				850F4B072C101E5D009B7E12 /* Models */,
+				850F4B062C101E52009B7E12 /* Controllers */,
+				14D5658C2C101C440042F58F /* HospConnectPatientApp.swift */,
+				85E3386B2C180BB500939B02 /* PatientDataFetch.swift */,
+				85E338712C18453900939B02 /* FetchPatientappointments.swift */,
+				85225AD32C19670D0054DEED /* SpecializationDataFetching.swift */,
+				14D5658E2C101C440042F58F /* ContentView.swift */,
+				14D565902C101C460042F58F /* Assets.xcassets */,
+				14D565922C101C460042F58F /* Preview Content */,
+			);
+			path = HospConnectPatient;
+			sourceTree = "<group>";
+		};
+		14D565922C101C460042F58F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				14D565932C101C460042F58F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		850F4B062C101E52009B7E12 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		850F4B072C101E5D009B7E12 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				850F4B1C2C10272F009B7E12 /* AuthModels.swift */,
+				85E3386D2C180D7500939B02 /* PatientModel.swift */,
+				85225AD12C1966B00054DEED /* SpecializationModel.swift */,
+				85D5961A2C187ACD007D9747 /* BedAvailibilityModel.swift */,
+				85E3386F2C1844E900939B02 /* AppointmentsPatientModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		850F4B082C101E60009B7E12 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				850F4B132C102090009B7E12 /* MainTabView.swift */,
+				850F4B152C1020D8009B7E12 /* HomeView.swift */,
+				14D4F2742C11890C00B51CE8 /* TreatmentView.swift */,
+				14D4F2762C118A7100B51CE8 /* DoctorView.swift */,
+				14D4F2782C118AE200B51CE8 /* MyPatientView.swift */,
+				14D4F27A2C118B0800B51CE8 /* PatientProfileView.swift */,
+				14D4F27C2C118C1300B51CE8 /* BedAvailabilityView.swift */,
+				85225ACD2C1961FB0054DEED /* AddBedsModel.swift */,
+				14D4F27E2C118C3600B51CE8 /* AddDoctorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		850F4B092C101E62009B7E12 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				850F4B0B2C101E92009B7E12 /* AuthViewModel.swift */,
+				850F4B0D2C101F0C009B7E12 /* LoginView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		850F4B0A2C101E77009B7E12 /* Https */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Https;
+			sourceTree = "<group>";
+		};
+		850F4B172C102427009B7E12 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				850F4B1A2C1024C6009B7E12 /* InputView.swift */,
+				85225ACF2C1965FD0054DEED /* BedsAvailibilityViewComponents.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14D565882C101C440042F58F /* HospConnectPatient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14D565972C101C460042F58F /* Build configuration list for PBXNativeTarget "HospConnectPatient" */;
+			buildPhases = (
+				14D565852C101C440042F58F /* Sources */,
+				14D565862C101C440042F58F /* Frameworks */,
+				14D565872C101C440042F58F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HospConnectPatient;
+			packageProductDependencies = (
+				857EDBD02C1B09450065EDBA /* StreamVideo */,
+				857EDBD22C1B09450065EDBA /* StreamVideoSwiftUI */,
+				857EDBD42C1B09450065EDBA /* StreamVideoUIKit */,
+			);
+			productName = HospConnectPatient;
+			productReference = 14D565892C101C440042F58F /* HospConnectPatient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14D565812C101C440042F58F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					14D565882C101C440042F58F = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = 14D565842C101C440042F58F /* Build configuration list for PBXProject "HospConnectPatient" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14D565802C101C440042F58F;
+			packageReferences = (
+				857EDBCF2C1B09450065EDBA /* XCRemoteSwiftPackageReference "stream-video-swift" */,
+			);
+			productRefGroup = 14D5658A2C101C440042F58F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14D565882C101C440042F58F /* HospConnectPatient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14D565872C101C440042F58F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14D565942C101C460042F58F /* Preview Assets.xcassets in Resources */,
+				14D565912C101C460042F58F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14D565852C101C440042F58F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14D4F2752C11890C00B51CE8 /* TreatmentView.swift in Sources */,
+				85225ACE2C1961FB0054DEED /* AddBedsModel.swift in Sources */,
+				14D4F27D2C118C1300B51CE8 /* BedAvailabilityView.swift in Sources */,
+				14D5658F2C101C440042F58F /* ContentView.swift in Sources */,
+				85225AD22C1966B00054DEED /* SpecializationModel.swift in Sources */,
+				85E3386E2C180D7500939B02 /* PatientModel.swift in Sources */,
+				14D4F27B2C118B0800B51CE8 /* PatientProfileView.swift in Sources */,
+				14D5658D2C101C440042F58F /* HospConnectPatientApp.swift in Sources */,
+				85E3386C2C180BB500939B02 /* PatientDataFetch.swift in Sources */,
+				14D4F2772C118A7100B51CE8 /* DoctorView.swift in Sources */,
+				850F4B142C102090009B7E12 /* MainTabView.swift in Sources */,
+				85D5961B2C187ACD007D9747 /* BedAvailibilityModel.swift in Sources */,
+				85E338702C1844E900939B02 /* AppointmentsPatientModel.swift in Sources */,
+				850F4B162C1020D8009B7E12 /* HomeView.swift in Sources */,
+				850F4B1B2C1024C6009B7E12 /* InputView.swift in Sources */,
+				850F4B0E2C101F0C009B7E12 /* LoginView.swift in Sources */,
+				850F4B0C2C101E92009B7E12 /* AuthViewModel.swift in Sources */,
+				85E338722C18453900939B02 /* FetchPatientappointments.swift in Sources */,
+				85225AD42C19670D0054DEED /* SpecializationDataFetching.swift in Sources */,
+				85225AD02C1965FD0054DEED /* BedsAvailibilityViewComponents.swift in Sources */,
+				14D4F27F2C118C3600B51CE8 /* AddDoctorView.swift in Sources */,
+				850F4B1D2C10272F009B7E12 /* AuthModels.swift in Sources */,
+				14D4F2792C118AE200B51CE8 /* MyPatientView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		14D565952C101C460042F58F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		14D565962C101C460042F58F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14D565982C101C460042F58F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HospConnectPatient/Preview Content\"";
+				DEVELOPMENT_TEAM = 7WV284FU97;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prakul;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14D565992C101C460042F58F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HospConnectPatient/Preview Content\"";
+				DEVELOPMENT_TEAM = 7WV284FU97;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prakul;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14D565842C101C440042F58F /* Build configuration list for PBXProject "HospConnectPatient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14D565952C101C460042F58F /* Debug */,
+				14D565962C101C460042F58F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14D565972C101C460042F58F /* Build configuration list for PBXNativeTarget "HospConnectPatient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14D565982C101C460042F58F /* Debug */,
+				14D565992C101C460042F58F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		857EDBCF2C1B09450065EDBA /* XCRemoteSwiftPackageReference "stream-video-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GetStream/stream-video-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		857EDBD02C1B09450065EDBA /* StreamVideo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 857EDBCF2C1B09450065EDBA /* XCRemoteSwiftPackageReference "stream-video-swift" */;
+			productName = StreamVideo;
+		};
+		857EDBD22C1B09450065EDBA /* StreamVideoSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 857EDBCF2C1B09450065EDBA /* XCRemoteSwiftPackageReference "stream-video-swift" */;
+			productName = StreamVideoSwiftUI;
+		};
+		857EDBD42C1B09450065EDBA /* StreamVideoUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 857EDBCF2C1B09450065EDBA /* XCRemoteSwiftPackageReference "stream-video-swift" */;
+			productName = StreamVideoUIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 14D565812C101C440042F58F /* Project object */;
+}
