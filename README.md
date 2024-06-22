@@ -4,21 +4,21 @@ Welcome to the Hospital Management System! This system is designed to streamline
 
 # Applications
 
- 1. Patient Application
+ 1. Patient Application -
 The Patient Application allows patients to:
 Schedule appointments with doctors.
 View their medical history.
 Receive notifications about upcoming appointments.
 Update personal information.
 
- 2. Hospital Admin Application
+ 2. Hospital Admin Application -
 The Hospital Admin Application allows administrators to:
 Manage doctor schedules and appointments.
 Add, edit, or remove doctors from the system.
 Monitor patient records and appointments.
 Generate reports for analysis.
 
- 3. Doctor Application
+ 3. Doctor Application -
 The Doctor Application allows doctors to:
 View their daily schedule and appointments.
 Access patient medical records and history.
@@ -35,6 +35,6 @@ https://apihosp.squaash.xyz/api-docs/
 # Contributing
 If you would like to contribute to the development of this system, please follow these guidelines:
 
-Fork the repository and create a new branch for your feature or bug fix.
-Make your changes and submit a pull request with a detailed description of your changes.
-Ensure that your code follows the established coding standards and conventions.
+1. Fork the repository and create a new branch for your feature or bug fix.
+2. Make your changes and submit a pull request with a detailed description of your changes.
+3. Ensure that your code follows the established coding standards and conventions.
